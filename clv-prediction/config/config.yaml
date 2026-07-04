@@ -1,0 +1,23 @@
+# Configuration for CLV Prediction Project
+
+paths:
+  raw_data: "data/raw/online_retail.csv"
+  interim_data_dir: "data/interim"
+  processed_data_dir: "data/processed"
+  models_dir: "models"
+  figures_dir: "reports/figures"
+
+data:
+  encoding: "latin1"
+  date_column: "InvoiceDate"
+  customer_id_column: "CustomerID"
+
+split:
+  calibration_start: "2010-12-01"
+  calibration_end: "2011-08-31"
+  holdout_start: "2011-09-01"
+  holdout_end: "2011-11-30"
+  excluded_start: "2011-12-01"   # partial month, dropped from analysis
+  excluded_end: "2011-12-09"
+
+random_seed: 42

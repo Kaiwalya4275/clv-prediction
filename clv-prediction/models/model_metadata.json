@@ -1,0 +1,27 @@
+{
+  "model_type": "two_stage_hurdle",
+  "stage1_algorithm": "LogisticRegression",
+  "stage2_algorithm": "XGBoost (log1p-transformed target)",
+  "features": [
+    "frequency",
+    "monetary",
+    "total_quantity",
+    "unique_products",
+    "recency_days",
+    "tenure_days",
+    "avg_order_value",
+    "is_one_time_buyer",
+    "is_uk"
+  ],
+  "cv_metrics": {
+    "MAE": 527.332,
+    "MSE": 4717394.194,
+    "RMSE": 2148.538,
+    "R2": 0.46828,
+    "Adjusted_R2": 0.46098,
+    "MAPE_on_nonzero_only": 81.814,
+    "pct_nonzero_actuals": 56.09
+  },
+  "n_customers_trained": 3309,
+  "random_seed": 42
+}
